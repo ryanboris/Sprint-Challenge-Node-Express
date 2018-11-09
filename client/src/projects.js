@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { DivAct } from './actions'
+import { CardAct } from './actions'
 
 
 const Projects = (props) => {
     return (
-        <div className="App">
+        <DivAct>
             {props.projects.map(project => {
                 return (
-                    <div key={project.id}>
+                    <CardAct key={project.id}>
                         <Link to={`/actions/${project.id}`}><p>Name: {project.name}</p></Link>
                         <p>Description: {project.description}</p>
                         <p>Project ID: {project.id}</p>
                         <p>Complete? {project.completed ? <span>Yes!</span> : <span>No!</span>} </p>
-                    </div>
+                    </CardAct>
                 );
             })}
-        </div>
+        </DivAct>
     );
 };
 
