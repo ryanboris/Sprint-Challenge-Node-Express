@@ -1,0 +1,25 @@
+{
+    "name": "Sprint-Challenge-Node-Express",
+    "version": "1.0.0",
+    "description": "## Assignments",
+    "main": "knexfile.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ryanboris/Sprint-Challenge-Node-Express.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.16.4",
+        "knex": "^0.15.2",
+        "sqlite3": "^4.0.3"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.6"
+    }
+}
